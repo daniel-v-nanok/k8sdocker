@@ -12,7 +12,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: k8sdocker
-  env: K8sdocker-env
+  env: K8sdocker-env-1
   bucket_name: elasticbeanstalk-us-east-1-894244321548
   bucket_path: k8sdocker
   on:

@@ -9,7 +9,9 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
-    command: ["npm", "build"]
+    command: ["npm", "run", "start"]
+    environment:
+      - CI=true
   tests:
     build:
       context: .

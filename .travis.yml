@@ -4,9 +4,9 @@ services:
 
 before_install:
   - docker build -t docker:react  -f Dockerfile.dev .
-# commented out to test aws deployment fast
-# script:
-#  - docker run -e CI=true docker:react npm run test -- --coverage
+
+script:
+  - docker run -e CI=true docker:react npm run test -- --coverage
 
 deploy: 
   provider: elasticbeanstalk

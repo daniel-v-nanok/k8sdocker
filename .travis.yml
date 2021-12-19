@@ -15,8 +15,8 @@ deploy:
   env: K8sdocker-env
   bucket_name: elasticbeanstalk-us-east-1-894244321548
   bucket_path: k8sdocker
-on:
-  branch: main
-access_key_id: $AWS_ACCESS_KEY
-secret_access:key: 
-  secure: "$AWS_SECRET_KEY"
+  on:
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access:key: 
+    secure: "$AWS_SECRET_KEY"

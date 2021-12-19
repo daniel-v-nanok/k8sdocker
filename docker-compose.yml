@@ -9,6 +9,7 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
+    command: ["npm", "build"]
   tests:
     build:
       context: .
